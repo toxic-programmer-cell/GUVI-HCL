@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <title>Form Inputs</title>
+    </head>
+    <body>
+        <div>
+            <Center><h1>Form Inputs</h1></Center>
+        </div>
+        <hr/>
+        <div>
+            <!--    text input -->
+            <input type="text" placeholder="Enter name">
+            <!-- number input -->
+            <input type="number" placeholder="Enter Number"> 
+            <!-- email input -->
+            <input type="email" placeholder="Enter Email"> 
+            <!-- password input -->
+            <input type="password" placeholder="Enter Password"> 
+            <!-- date input -->
+            <input type="date" placeholder="Enter Date"> 
+            <!-- time input -->
+            <input type="time" placeholder="Enter Time"> 
+            <!-- datetime-local input -->
+            <input type="datetime-local" placeholder="Enter Date and Time"> 
+            <!-- month input -->
+            <input type="month" placeholder="Enter Month"> 
+            <!-- week input -->
+            <input type="week" placeholder="Enter Week"> 
+            <!-- url input -->
+            <input type="url" placeholder="Enter URL"> 
+            <!-- search input -->
+            <input type="search" placeholder="Enter Search"> 
+            <!-- tel input -->
+            <input type="tel" placeholder="Enter Phone Number"> 
+            <!-- color input -->
+            <input type="color" placeholder="Enter Color"> 
+            <!-- range input -->
+            <input type="range" placeholder="Enter Range"> 
+            <!-- file input -->
+            <input type="file" placeholder="Enter File"> 
+            <!-- submit input -->
+            <input type="submit" value="Submit"> 
+            <!-- reset input -->
+            <input type="reset" value="Reset"> 
+            <!-- button input -->
+            <input type="button" value="Button"> 
+            <!-- hidden input -->
+            <input type="hidden" value="Hidden"> 
+            <!-- checkbox input -->
+            <input type="checkbox" value="Checkbox"> 
+            <!-- radio input -->
+            <input type="radio" value="Radio"> 
+        </div>
+        <hr/>
+        <div>
+            <textarea placeholder="Enter your massage" rows="5" cols="20"></textarea>
+        </div>
+
+        <hr/>
+
+        <div>
+            <label for="">Select Gender</label>
+            <select name="gender">
+                <option value="" selected>Select Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Trans">Trans</option>
+            </select>
+        </div>
+
+        <hr/>
+
+        <div>
+            <form>
+                <input type="text" list="states" placeholder="Enter your state">
+                <datalist id="states">
+                    <option value="Jharkhand"></option>
+                    <option value="Bihar"></option>
+                    <option value="Uttar Pradesh"></option>
+                    <option value="Delhi"></option>
+                    <option value="Mumbai"></option>
+                </datalist>
+            </form>
+        </div>
+
+        <hr/>
+
+        <div>
+            <label>Select Cars</label>
+            <select name="cars" id="cars">
+                <optgroup label="Indian Cars">
+                    <option value="Maruti">Maruti</option>
+                    <option value="Tata">Tata</option>
+                    <option value="Mahindra">Mahindra</option>
+                </optgroup>
+                <optgroup label="Foreign Cars">
+                    <option value="BMW">BMW</option>
+                    <option value="Audi">Audi</option>
+                    <option value="Mercedes">Mercedes</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <hr/>
+
+        <div>
+            <fieldset>
+                <legend>Select Your Hobbies</legend>
+                <input type="checkbox" value="Reading"> Reading
+                <input type="checkbox" value="Playing"> Playing
+                <input type="checkbox" value="Singing"> Singing
+                <input type="checkbox" value="Dancing"> Dancing
+            </fieldset>
+        </div>
+    </body>
+</html>
