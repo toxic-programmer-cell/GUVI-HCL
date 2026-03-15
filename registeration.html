@@ -24,29 +24,29 @@
 <body>
 
     <div>
-        <form action="" method="get">
+        <form action="" method="post">
             <fieldset>
                 <legend>Enrole Your Details</legend>
                 <label for="">Name</label>
                 <br>
-                <input type="text" placeholder="Enter your name">
+                <input name="name" type="text" placeholder="Enter your name" required>
                 <br>
-                <br>
+
                 <label for="">Age</label>
                 <br>
-                <input type="number" placeholder="Enter your age">
+                <input name="age" type="number" placeholder="Enter your age" required>
                 <br>
-                <br>
+
                 <label for="">Email</label>
                 <br>
-                <input type="email" placeholder="Enter your email">
+                <input name="email" type="email" placeholder="Enter your email" required>
                 <br>
-                <br>
+
                 <label for="">Phone Number</label>
                 <br>
-                <input type="tel" placeholder="Enter your phone number">
+                <input name="phone" type="tel" placeholder="Enter your phone number" required>
                 <br>
-                <br>
+
 
                 <legend>Gender</legend>
                 <select name="Gender" id="">
@@ -56,7 +56,7 @@
                     <option value="Others">Others</option>
                 </select>
                 <br>
-                <br>
+
                 <legend>State</legend>
                 <input type="text" list="States" placeholder="Enter your state">
                 <datalist id="States">
@@ -72,20 +72,20 @@
                     <option value="Pune"></option>
                 </datalist>
                 <br>
-                <br>
+
                 <legend>Address</legend>
-                <textarea name="" id="" cols="20" rows="5" placeholder="Enter your address"></textarea>
+                <textarea name="" id="" cols="20" rows="5" placeholder="Enter your address" required></textarea>
                 <br>
-                <br>
+
                 <legend>Date & Time</legend>
                 <input type="datetime-local">
                 <br>
-                <br>
+
                 <legend>Select Resume</legend>
-                <input type="file" accept=".pdf">
+                <input type="file" accept=".pdf" required>
                 <br>
-                <br>
-                <button>Submit</button>
+
+                <button type="submit">Submit</button>
             </fieldset>
 
         </form>
