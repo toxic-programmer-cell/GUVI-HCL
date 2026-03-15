@@ -1,0 +1,95 @@
+<!-- 
+ Create a legendry form and atterbutes are
+ -Name
+ -Age
+ -Email
+ -Phone Number
+ -Gender(Select)
+ -States(Datalist(10 States))
+ -Address
+ -date & Time
+ -Select Resume
+ -Submit Button
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+
+<body>
+
+    <div>
+        <form action="" method="get">
+            <fieldset>
+                <legend>Enrole Your Details</legend>
+                <label for="">Name</label>
+                <br>
+                <input type="text" placeholder="Enter your name">
+                <br>
+                <br>
+                <label for="">Age</label>
+                <br>
+                <input type="number" placeholder="Enter your age">
+                <br>
+                <br>
+                <label for="">Email</label>
+                <br>
+                <input type="email" placeholder="Enter your email">
+                <br>
+                <br>
+                <label for="">Phone Number</label>
+                <br>
+                <input type="tel" placeholder="Enter your phone number">
+                <br>
+                <br>
+
+                <legend>Gender</legend>
+                <select name="Gender" id="">
+                    <option value="">Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Others">Others</option>
+                </select>
+                <br>
+                <br>
+                <legend>State</legend>
+                <input type="text" list="States" placeholder="Enter your state">
+                <datalist id="States">
+                    <option value="Jharkhand"></option>
+                    <option value="Uttar Pardesh"></option>
+                    <option value="Bihar"></option>
+                    <option value="Delhi"></option>
+                    <option value="Mumbai"></option>
+                    <option value="Kolkata"></option>
+                    <option value="Chennai"></option>
+                    <option value="Bangalore"></option>
+                    <option value="Hyderabad"></option>
+                    <option value="Pune"></option>
+                </datalist>
+                <br>
+                <br>
+                <legend>Address</legend>
+                <textarea name="" id="" cols="20" rows="5" placeholder="Enter your address"></textarea>
+                <br>
+                <br>
+                <legend>Date & Time</legend>
+                <input type="datetime-local">
+                <br>
+                <br>
+                <legend>Select Resume</legend>
+                <input type="file" accept=".pdf">
+                <br>
+                <br>
+                <button>Submit</button>
+            </fieldset>
+
+        </form>
+    </div>
+</body>
+
+</html>
