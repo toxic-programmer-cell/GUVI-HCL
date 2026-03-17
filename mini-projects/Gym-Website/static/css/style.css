@@ -58,6 +58,7 @@ header{
     background-color: #000;
     color: #fff;
     cursor: pointer;
+    font-weight: 700;
 }
 
 .right button:hover{
@@ -65,3 +66,65 @@ header{
     color: #000;
     transition: 0.3s ease-in-out;
 }
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form{
+    background-color: #00000059;
+    backdrop-filter: blur(5px);
+    max-width: 700px;
+    width: 30%;
+    padding: 19px;
+    border-radius: 10px;
+    
+}
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    padding: 12px 20px;
+    align-items: center;
+    text-align: center;
+}
+
+legend{
+    color: chartreuse;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.form-group{
+   display: flex;
+   width: 100%;
+   padding: 8px 0px;
+}
+.form-group input, .form-group select{
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+    color: #fff;
+    background-color: #000;
+    outline: none;
+}
+
+.form-group input:focus{
+    border-color: chartreuse;
+    outline: none;
+}
+
+.btn{
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid #fff;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+}
+
