@@ -1,0 +1,67 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    background: url("../images/pexels-scottwebb-136404.jpg") no-repeat;
+    background-color: #000;
+    color: #fff;
+    background-size: cover;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    display: flex;
+    padding: 4px 30px;
+    /* background: #fff; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left{
+    display: inline-block;
+}
+
+.left img{
+    width: 150px;
+}
+
+.middle ul{
+    display: inline-block;
+}
+
+.middle ul li{
+    display: inline-block;
+}
+
+.middle ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+}
+
+.middle ul li a:hover, .middle ul li a.active{
+    text-decoration: underline;
+    color: chartreuse;
+}
+
+.right{
+    display: inline-block;
+}
+
+.right button{
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 40px;
+    border: 1px solid #fff;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.right button:hover{
+    background-color: chartreuse;
+    color: #000;
+    transition: 0.3s ease-in-out;
+}
