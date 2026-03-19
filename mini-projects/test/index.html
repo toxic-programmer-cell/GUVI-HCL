@@ -56,14 +56,105 @@
     <section class="testimonials" id="testimonials">
         <h2 class="section-title">Client Success Stories</h2>
         <div class="testimonial-grid">
-            <div class="testimonial-card">
-                "FitLife Gym changed my life! The trainers are amazing and the atmosphere is motivating."
-            </div>
-            <div class="testimonial-card">
-                "Best gym experience ever! I've lost 20kg in 3 months thanks to their program."
-            </div>
-            <div class="testimonial-card">
-                "The community here is incredible. Everyone supports each other's fitness journey."
+            <div class="testimonial-track">
+                <!-- First 5 distinct testimonials -->
+                <div class="testimonial-card">
+                    <div class="card-left">
+                        <div class="img-container"><img src="./static/image/drew-agGIKYs4mYs-unsplash.jpg" alt="John">
+                        </div>
+                        <p>John Doe</p>
+                    </div>
+                    <div class="card-right">
+                        <p>FitLife Gym changed my life! I've never felt stronger and healthier.</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="card-left">
+                        <div class="img-container"><img src="./static/image/benjamin-klaver-e08l4Ny-0eg-unsplash.jpg"
+                                alt="Sara"></div>
+                        <p>Sara Lee</p>
+                    </div>
+                    <div class="card-right">
+                        <p>Great trainers and supportive community. I achieved my goals fast!</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="card-left">
+                        <div class="img-container"><img src="./static/image/elizeu-dias-2EGNqazbAMk-unsplash.jpg"
+                                alt="Mike"></div>
+                        <p>Mike Ross</p>
+                    </div>
+                    <div class="card-right">
+                        <p>Facilities are top-notch and the classes keep me motivated every day.</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="card-left">
+                        <div class="img-container"><img src="./static/image/sule-makaroglu-8opGXsff3uc-unsplash.jpg"
+                                alt="Priya"></div>
+                        <p>Priya Patel</p>
+                    </div>
+                    <div class="card-right">
+                        <p>Been with FitLife for 6 months. My energy and strength are at an all time high.</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="card-left">
+                        <div class="img-container"><img src="./static/image/total-shape-TY_Ce5d2G-k-unsplash.jpg"
+                                alt="Carlos"></div>
+                        <p>Carlos Gomez</p>
+                    </div>
+                    <div class="card-right">
+                        <p>Love the variety in workouts and the friendly trainers who care about progress.</p>
+                    </div>
+                </div>
+                <!-- Duplicate for seamless looping -->
+                <div class="testimonial-card">
+                    <div class="card-left">
+                        <div class="img-container"><img src="./static/image/drew-agGIKYs4mYs-unsplash.jpg" alt="John">
+                        </div>
+                        <p>John Doe</p>
+                    </div>
+                    <div class="card-right">
+                        <p>FitLife Gym changed my life! I've never felt stronger and healthier.</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="card-left">
+                        <div class="img-container"><img src="./static/image/coach.jpg" alt="Sara"></div>
+                        <p>Sara Lee</p>
+                    </div>
+                    <div class="card-right">
+                        <p>Great trainers and supportive community. I achieved my goals fast!</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="card-left">
+                        <div class="img-container"><img src="./static/image/member.jpg" alt="Mike"></div>
+                        <p>Mike Ross</p>
+                    </div>
+                    <div class="card-right">
+                        <p>Facilities are top-notch and the classes keep me motivated every day.</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="card-left">
+                        <div class="img-container"><img src="./static/image/athlete.jpg" alt="Priya"></div>
+                        <p>Priya Patel</p>
+                    </div>
+                    <div class="card-right">
+                        <p>Been with FitLife for 6 months. My energy and strength are at an all time high.</p>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="card-left">
+                        <div class="img-container"><img src="./static/image/member2.jpg" alt="Carlos"></div>
+                        <p>Carlos Gomez</p>
+                    </div>
+                    <div class="card-right">
+                        <p>Love the variety in workouts and the friendly trainers who care about progress.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -82,6 +173,10 @@
                         <input type="email" id="email" name="email" required>
                     </div>
                     <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
                         <label for="message">Message</label>
                         <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
@@ -90,18 +185,19 @@
                         Message</button>
                 </form>
             </div>
-            <div style="background: #f8f9fa; padding: 2rem; border-radius: 10px;">
-                <h3>Contact Information</h3>
-                <p>📧 hello@fitlifegym.com</p>
-                <p>📞 +1 (555) 123-4567</p>
-                <p>📍 123 Fitness Street, Health City</p>
-            </div>
+
         </div>
     </section>
 
     <footer>
         <p>&copy; 2024 FitLife Gym. All rights reserved.</p>
     </footer>
+    <!-- <div style="background: #f8f9fa; padding: 2rem; border-radius: 10px;">
+                <h3>Contact Information</h3>
+                <p>📧 hello@fitlifegym.com</p>
+                <p>📞 +1 (555) 123-4567</p>
+                <p>📍 123 Fitness Street, Health City</p>
+            </div> -->
 </body>
 
 </html>
