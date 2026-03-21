@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 h1,
@@ -110,6 +111,10 @@ ul {
   text-decoration: underline;
 }
 
+.hero {
+  position: relative;
+}
+
 .hero-section {
   display: flex;
   align-items: center;
@@ -132,4 +137,26 @@ ul {
 }
 .hero-section img:last-child {
   object-position: center;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.dot.active {
+  background-color: #000;
+  border: 2px solid #fff;
 }
