@@ -24,7 +24,7 @@ ul {
   align-items: center;
   color: white;
   justify-content: space-between;
-  animation: advertisment-infinite-scroll 15s linear infinite;
+  animation: advertisment-infinite-scroll 25s linear infinite;
   min-width: 200px;
 }
 
@@ -73,6 +73,10 @@ ul {
   border-bottom-right-radius: 5px;
 }
 
+.logo h3 {
+  font-size: 30px;
+}
+
 .user-section {
   display: flex;
   align-items: center;
@@ -104,4 +108,28 @@ ul {
 
 .bottom-nav ul li:hover {
   text-decoration: underline;
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+
+.hero-section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-section img:first-child {
+  object-position: center;
+}
+.hero-section img:nth-child(2) {
+  object-position: bottom;
+}
+.hero-section img:last-child {
+  object-position: center;
 }
