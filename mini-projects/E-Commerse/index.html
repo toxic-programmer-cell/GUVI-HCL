@@ -1,88 +1,210 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E-Commerse</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/brands.min.css"
-      integrity="sha512-WxpJXPm/Is1a/dzEdhdaoajpgizHQimaLGL/QqUIAjIihlQqlPQb1V9vkGs9+VzXD7rgI6O+UsSKl4u5K36Ydw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/brands.min.css"
+        integrity="sha512-WxpJXPm/Is1a/dzEdhdaoajpgizHQimaLGL/QqUIAjIihlQqlPQb1V9vkGs9+VzXD7rgI6O+UsSKl4u5K36Ydw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./static/css/style.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <section>
-      <div class="advertisment">
-        <ul>
-          <li>Garented Authenticity</li>
-          <li>Free Shipping</li>
-          <li>Easy Returns</li>
-          <li>24/7 Customer Support</li>
-          <li>Secure Payment Options</li>
-        </ul>
-      </div>
+        <div class="advertisment">
+            <ul>
+                <li>Garented Authenticity</li>
+                <li>Free Shipping</li>
+                <li>Easy Returns</li>
+                <li>24/7 Customer Support</li>
+                <li>Secure Payment Options</li>
+            </ul>
+        </div>
     </section>
 
     <nav>
-      <div class="top-nav">
-        <div class="search-section">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <input type="text" placeholder="Search here" />
+        <div class="top-nav">
+            <div class="search-section">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search here" />
+            </div>
+            <div class="logo">
+                <h3>KICK SPORTS</h3>
+            </div>
+            <div class="user-section">
+                <i class="fa-solid fa-user" width="20" height="20"></i>
+                <div>
+                    <i class="fa-solid fa-cart-arrow-down" width="20" height="20"></i>
+                </div>
+            </div>
         </div>
-        <div class="logo">
-          <h3>KICK SPORTS</h3>
+        <div class="bottom-nav">
+            <ul>
+                <li>New Arrivals</li>
+                <li>Best Sellers</li>
+                <li>Accessories</li>
+                <li>Offers</li>
+            </ul>
         </div>
-        <div class="user-section">
-          <i class="fa-solid fa-user" width="20" height="20"></i>
-          <div>
-            <i class="fa-solid fa-cart-arrow-down" width="20" height="20"></i>
-          </div>
-        </div>
-      </div>
-      <div class="bottom-nav">
-        <ul>
-          <li>New Arrivals</li>
-          <li>Best Sellers</li>
-          <li>Accessories</li>
-          <li>Offers</li>
-        </ul>
-      </div>
     </nav>
 
     <section class="hero">
-      <div class="hero-section">
-        <img
-          class="hero-img-slide"
-          src="./static/images/hero-image.png"
-          alt="hero1"
-        />
-        <img
-          class="hero-img-slide"
-          src="./static/images/hero-image2.png"
-          alt="hero2"
-        />
-        <img
-          class="hero-img-slide"
-          src="./static/images/hero-image3.png"
-          alt="hero3"
-        />
-      </div>
+        <div class="hero-section">
+            <img class="hero-img-slide" src="./static/images/hero-image.png" alt="hero1" />
+            <img class="hero-img-slide" src="./static/images/hero-image2.png" alt="hero2" />
+            <img class="hero-img-slide" src="./static/images/hero-image3.png" alt="hero3" />
+        </div>
 
-      <div class="carousel-indicators">
-        <span class="dot" data-slide="0" onclick="currentSlide(0)"></span>
-        <span class="dot" data-slide="1" onclick="currentSlide(1)"></span>
-        <span class="dot" data-slide="2" onclick="currentSlide(2)"></span>
-      </div>
+        <div class="carousel-indicators">
+            <span class="dot" data-slide="0" onclick="currentSlide(0)"></span>
+            <span class="dot" data-slide="1" onclick="currentSlide(1)"></span>
+            <span class="dot" data-slide="2" onclick="currentSlide(2)"></span>
+        </div>
+    </section>
+
+    <section class="app-body">
+        <div class="filter">
+            <div class="filter-item">
+                <select name="brand" id="brand-select" title="Select Brand">
+                    <option value="">BRAND</option>
+                    <option value="KG">KG 2023</option>
+                    <option value="ADIDASXKG">ADIDASxKG</option>
+                </select>
+                <select name="collection" id="collection-select" title="Select Collection">
+                    <option value="">COLLECTION</option>
+                    <option value="KG 2023">KG 2023</option>
+                    <option value="KG shooter">KG shooter</option>
+                </select>
+                <select name="offer" id="offer-select" title="Select Offer">
+                    <option value="">ON SALE</option>
+                    <option value="KG Watch">KG Watches</option>
+                    <option value="KG Bages">KG Bages</option>
+                </select>
+                <select name="trending" id="trending-select" title="Select Trending">
+                    <option value="">TOP RATED</option>
+                    <option value="PUMA">PUMA</option>
+                    <option value="ADIDAS">ADIDAS</option>
+                </select>
+            </div>
+        </div>
+        <div class="product-grid">
+            <div class="grid-card">
+                <div class="card">
+                    <div class="img">
+                        <img src="./static/images/pd1 (1).jpg" alt="pd1">
+                    </div>
+                    <div class="details">
+                        <h3>ADIDAS X KG 2023</h3>
+                        <p>₹ 9,999</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="./static/images/pd1 (10).jpg" alt="pd1">
+                    </div>
+                    <div class="details">
+                        <h3>ADIDAS X KG 2023</h3>
+                        <p>₹ 9,999</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="./static/images/pd1 (11).jpg" alt="pd1">
+                    </div>
+                    <div class="details">
+                        <h3>ADIDAS X KG 2023</h3>
+                        <p>₹ 9,999</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="./static/images/pd1 (12).jpg" alt="pd1">
+                    </div>
+                    <div class="details">
+                        <h3>ADIDAS X KG 2023</h3>
+                        <p>₹ 9,999</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="./static/images/pd1 (13).jpg" alt="pd1">
+                    </div>
+                    <div class="details">
+                        <h3>ADIDAS X KG 2023</h3>
+                        <p>₹ 9,999</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="./static/images/pd1 (8).jpg" alt="pd1">
+                    </div>
+                    <div class="details">
+                        <h3>ADIDAS X KG 2023</h3>
+                        <p>₹ 9,999</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="./static/images/pd1 (7).jpg" alt="pd1">
+                    </div>
+                    <div class="details">
+                        <h3>ADIDAS X KG 2023</h3>
+                        <p>₹ 9,999</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="./static/images/pd1 (6).jpg" alt="pd1">
+                    </div>
+                    <div class="details">
+                        <h3>ADIDAS X KG 2023</h3>
+                        <p>₹ 9,999</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="./static/images/pd1 (5).jpg" alt="pd1">
+                    </div>
+                    <div class="details">
+                        <h3>ADIDAS X KG 2023</h3>
+                        <p>₹ 9,999</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="./static/images/pd1 (4).jpg" alt="pd1">
+                    </div>
+                    <div class="details">
+                        <h3>ADIDAS X KG 2023</h3>
+                        <p>₹ 9,999</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="./static/images/pd1 (3).jpg" alt="pd1">
+                    </div>
+                    <div class="details">
+                        <h3>ADIDAS X KG 2023</h3>
+                        <p>₹ 9,999</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="img">
+                        <img src="./static/images/pd1 (2).jpg" alt="pd1">
+                    </div>
+                    <div class="details">
+                        <h3>ADIDAS X KG 2023</h3>
+                        <p>₹ 9,999</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <script src="./static/script/script.js"></script>
-  </body>
+</body>
+
 </html>
