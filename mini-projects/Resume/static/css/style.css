@@ -1,0 +1,17 @@
+:root{
+    --background-color: #000;
+    --text-color: #fff;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+h1,h2,h3,p,a,ul,li{
+    margin: 0;
+    padding: 0;
+}
