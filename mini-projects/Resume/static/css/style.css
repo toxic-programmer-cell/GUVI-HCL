@@ -1,17 +1,33 @@
-:root{
-    --background-color: #000;
-    --text-color: #fff;
+:root {
+    --primeryTextColor--light: #000;
+    --secondarytextcolor--light: rgb(51, 51, 51);
+    --backgroundcolor--light: #eceaea;
+    --bordercolor-light: #4e4d4d;
 }
 
-body{
+[data-theme="dark"] {
+    --primeryTextColor--light: #fff;
+    --secondarytextcolor--light: rgb(200, 200, 200);
+    --backgroundcolor--light: #333;
+    --bordercolor-light: #666;
+}
+
+
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: var(--background-color);
-    color: var(--text-color);
+    background-color: var(--backgroundcolor--light);
+    color: var(--primeryTextColor--light);
 }
 
-h1,h2,h3,p,a,ul,li{
+h1,
+h2,
+h3,
+p,
+a,
+ul,
+li {
     margin: 0;
     padding: 0;
 }
