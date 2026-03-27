@@ -153,4 +153,18 @@ li {
     margin: 10px 0px;
 }
 
-@media (maxwidth){}
+@media (max-width: 600px) {
+    #container--main {
+        margin: 30px 20px;
+    }
+
+    #section--main {
+        align-items: center;
+        justify-content: center;
+    }
+
+    #social--list {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
