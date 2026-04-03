@@ -33,4 +33,4 @@ console.log(symbol, typeof symbol); //symbol
 let bigInt = 123456789736367472635477583645253647346537473645n;
 console.log(bigInt, typeof bigInt); //bigint
 
-//
+//Array
