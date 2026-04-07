@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Todo List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <style>
+        :root {
+            --backgroundColor--light: #fff;
+            --textColor--light: #000;
+
+            --backgroundColor: var(--backgroundColor--light);
+            --textColor: var(--textColor--light);
+        }
+
+        [data-theme="dark"] {
+            --backgroundColor--dark: #000;
+            --textColor--dark: #fff;
+
+            --backgroundColor: var(--backgroundColor--dark);
+            --textColor: var(--textColor--dark);
+        }
+
+        body {
+            background-color: var(--backgroundColor);
+            color: var(--textColor);
+        }
+
+        .completed {
+            text-decoration: line-through;
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="position: relative;">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6">
+                <div class="card mt-5">
+                    <div class="card-body text-center">
+                        <h2>Todo List</h2>
+                        <div class="input-group my-3">
+                            <input type="text" class="form-control" placeholder="Enter your task here" id="taskInput"
+                                aria-label="Recipient’s username" aria-describedby="addTodoBtn">
+                            <button class="btn btn-primary" type="button" id="addTodoBtn">Add Todo</button>
+                        </div>
+                    </div>
+                    <ul id="todoList" class="list-group list-group-flush"></ul>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+
+        </div>
+        <button style="position: absolute; top: 20px; right: 30px;" class="rounded-circle border w-12"
+            id="themeBtn">🌞</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script src="./script.js"></script>
+    <script src="./theme.js"></script>
+</body>
+
+</html>

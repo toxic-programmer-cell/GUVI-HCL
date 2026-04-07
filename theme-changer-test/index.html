@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme-changer</title>
+    <style>
+        :root {
+            --backgroundColor--light: #fff;
+            --textColor--light: #000;
+
+            --backgroundColor: var(--backgroundColor--light);
+            --textColor: var(--textColor--light);
+        }
+
+        [data-theme="dark"] {
+            --backgroundColor--dark: #000;
+            --textColor--dark: #fff;
+
+            --backgroundColor: var(--backgroundColor--dark);
+            --textColor: var(--textColor--dark);
+        }
+
+        body {
+            background-color: var(--backgroundColor);
+            color: var(--textColor);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Theme Changer</h1>
+        <button class="theme">Toggle Theme</button>
+    </div>
+    <script>
+        const themeBtn = document.querySelector('.theme');
+
+        // Check if a theme is already saved in localStorage
+        const savedTheme = localStorage.getItem('theme');
+
+        // If no theme is saved, set the default to 'light' and save it in localStorage
+        if (!savedTheme) {
+            localStorage.setItem('theme', 'light');
+            document.documentElement.setAttribute('data-theme', 'light');
+        } else {
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        }
+
+        // Toggle theme on button click and save the new theme in localStorage
+        themeBtn.addEventListener('click', () => {
+            const currTheme = document.documentElement.getAttribute('data-theme');
+
+            // Toggle between 'light' and 'dark'
+            const newTheme = currTheme === 'light' ? 'dark' : 'light';
+
+            // Apply the new theme
+            document.documentElement.setAttribute('data-theme', newTheme)
+
+            // Save the new theme in localStorage
+            localStorage.setItem('theme', newTheme);
+        })
+    </script>
+</body>
+
+</html>
