@@ -3,14 +3,24 @@ document.addEventListener("DOMContentLoaded", function () {
   const addTodoBtn = document.getElementById("addTodoBtn");
   const todoList = document.getElementById("todoList");
 
-  const todos = JSON.parse(localStorage.getItem("todos")) || [];
+  let todos = [];
+  try {
+    todos = JSON.parse(localStorage.getItem("todos")) || [];
+  } catch {
+    todos = [];
+  }
 
   function renderTodo() {
     todoList.innerHTML = "";
+
+    if (todos.length === 0) {
+      todoList.innerHTML = "<p>No task yet</p>";
+      return;
+    }
     todos.forEach((todo, index) => {
       const taskList = document.createElement("li");
       taskList.className =
-        "list-items-group d-flex justify-content-between align-items-center";
+        "list-group-item d-flex justify-content-between align-items-center";
 
       const todoSpan = document.createElement("span");
       todoSpan.textContent = todo.text;
@@ -21,9 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const completeBtn = document.createElement("button");
       completeBtn.className = "btn btn-success btn-sm";
       completeBtn.innerText = "Complete";
-      completeBtn.addEventListener("click", () => {
-        completeTodo(index);
-      });
+      completeBtn.onclick = () => completeTodo(index);
 
       if (todo.completed) {
         todoSpan.classList.add("completed");
@@ -32,21 +40,17 @@ document.addEventListener("DOMContentLoaded", function () {
       const deleteBtn = document.createElement("button");
       deleteBtn.className = "btn btn-danger btn-sm";
       deleteBtn.innerText = "Delete";
-      deleteBtn.addEventListener("click", () => {
-        deleteTodo(index);
-      });
+      deleteBtn.onClick = () => deleteTodo(index);
 
       todoList.appendChild(taskList);
 
-      taskList.appendChild(todoSpan);
-      taskList.appendChild(btnDiv);
+      taskList.appendChild(todoSpan, btnDiv);
 
-      btnDiv.appendChild(completeBtn);
-      btnDiv.appendChild(deleteBtn);
+      btnDiv.appendChild(completeBtn, deleteBtn);
     });
   }
 
-  todoInput.addEventListener("keypress", (e) => {
+  todoInput.addEventListener("keydown", (e) => {
     if (e.key === "Enter") {
       addTodo();
     }
