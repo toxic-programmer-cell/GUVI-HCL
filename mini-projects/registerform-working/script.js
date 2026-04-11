@@ -9,8 +9,12 @@ function User(name, email, adhar, gender) {
 Display.prototype.validate = function (user) {
   console.log("validating...");
   if (user.name.length < 3 || user.email.length < 3 || user.adhar.length < 8) {
+    console.log("validation failed");
     return false;
-  } else return true;
+  } else {
+    console.log("validation succes");
+    return true;
+  }
 };
 
 Display.prototype.add = function (user) {
@@ -18,7 +22,7 @@ Display.prototype.add = function (user) {
   let uList = `<tr>
     <td>${user.name}</td>
     <td>${user.email}</td>
-    <td>${user.adher}</td>
+    <td>${user.adhar}</td>
     <td>${user.gender}</td>
     </tr>
     `;
@@ -65,10 +69,11 @@ function userFormSubmit(e) {
     display.add(data);
     display.clear();
     display.show("success", "Form submited successfully");
+    console.log(data);
   } else {
     display.show(
       "danger",
-      "Some issue occured! Please submit the forme again..."
+      "Registration failed! Please submit the from again..."
     );
   }
 }
