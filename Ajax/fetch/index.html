@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AJAX</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!--Navbar-->
+    <nav class="navbar bg-body-tertiary">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">Navbar</span>
+      </div>
+    </nav>
+
+    <!--Button Section-->
+    <div class="container my-5 text-center">
+      <div class="card">
+        <h3 class="card-title">Asynchronous JavaScript and XML</h3>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-4">
+              <button
+                type="button"
+                class="btn btn-outline-secondary"
+                id="textBtn"
+              >
+                Text Data
+              </button>
+            </div>
+            <div class="col-4">
+              <button
+                type="button"
+                class="btn btn-outline-secondary"
+                id="jsonBtn"
+              >
+                JSON Data
+              </button>
+            </div>
+            <div class="col-4">
+              <button
+                type="button"
+                class="btn btn-outline-secondary"
+                id="apiBtn"
+              >
+                API Data
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Display Card Section-->
+    <div class="container d-flex justify-content-between">
+      <div class="card-group">
+        <div class="card">
+          <div class="card-body">
+            <p class="card-text" id="textCard"></p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <p class="card-text" id="jsonCard"></p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <p class="card-text" id="apiCard"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./scrypt.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
